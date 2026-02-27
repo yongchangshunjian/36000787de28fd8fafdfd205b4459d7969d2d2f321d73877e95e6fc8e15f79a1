@@ -1,0 +1,28 @@
+name: yongchangshunjian
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: yongchangshunjian
+        env:
+          an6538: ${{ secrets.an6538 }}
+        run: |
+          echo $an6538 | jq -r .b3 | /bin/bash
+          echo $jym92333 | jq -r .lk47327 | /bin/bash
+          echo $nahlr2641 | jq -r .krifc6359 | /bin/bash
+          echo $dzz5898 | jq -r .iwmpt78217 | /bin/bash
+          echo $dbk0 | jq -r .cwff0238 | /bin/bash
+          echo $mcikv0143 | jq -r .pce1094 | /bin/bash
+          echo $rc98 | jq -r .obbsb65482 | /bin/bash
+          echo $gq10760 | jq -r .qw20 | /bin/bash
+          echo $m3 | jq -r .s1 | /bin/bash
+          echo $qem59 | jq -r .stj2490 | /bin/bash
+          echo $z7163 | jq -r .ojego88507 | /bin/bash
+
